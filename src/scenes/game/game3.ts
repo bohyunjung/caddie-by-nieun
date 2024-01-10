@@ -14,6 +14,10 @@ export class Game3Scene extends Container implements IScene {
             fish.height = 32;
             fish.position.x = parentWidth / 2 + (i - 2) * 128;
             fish.position.y = parentHeight / 2;
+
+            fish.eventMode = 'static';
+            fish.cursor = 'pointer';
+            fish.onclick = () => { fish.position.x += 2; };
             this.addChild(fish);
         });
     }
