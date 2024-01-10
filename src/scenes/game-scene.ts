@@ -36,7 +36,7 @@ export class GameScene extends Container implements IScene {
         this.addChild(this._viteLogo, this._tsLogo, this._pixiLogo);
     }
 
-    update(framesPassed: number): void {
+    update(_: number): void {
         
     }
 

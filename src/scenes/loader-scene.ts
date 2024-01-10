@@ -35,11 +35,11 @@ export class LoaderScene extends Container implements IScene {
         SceneManager.changeScene(new GameScene(SceneManager.width, SceneManager.height))
     }
 
-    update(framesPassed: number): void {
+    update(_: number): void {
         //...
     }
 
-    resize(parentWidth: number, parentHeight: number): void {
+    resize(_2: number, _1: number): void {
         //...
     }
 }
