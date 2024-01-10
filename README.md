@@ -1,30 +1,4 @@
-### Pixi JS + Typescript + Vite template
+### Caddie By Nieun
 
-#### Just clone this repo and start to develop your own game!
-
-![just clone this repo and start to develop your own game](https://github.com/turbokirichenko/pixijs-typescript-vite-template/blob/main/public/logo/pixi-logo.png)
-
-:white_check_mark: pixi version 7
-:white_check_mark: vanilla typescript
-:white_check_mark: for game development
-
-##### get started
-
-```
-$ cd your-repo-name
-$ npm install
-$ npm run dev -- --host
-```
-
-##### build
-
-```
-$ npm run build
-```
-
-##### source
-
-[pixi elementals](https://www.pixijselementals.com/#before-we-even-start)
-[pixi js official website](https://pixijs.com/)
-[vite guide](https://vitejs.dev/guide/)
-[typescript handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Project Notion](https://bohyunjung.notion.site/1994-2023-17583522ae6647f2a5d8966b7f6968ce)
+- [Project Google Drive](https://drive.google.com/drive/u/0/folders/1IQ9MpGEFRWOZwxnMgzcRKANWHkMVEl2P)
