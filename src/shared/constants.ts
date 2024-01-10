@@ -1,1 +1,1 @@
-export const FILL_COLOR = 0xffffff;
+export const FILL_COLOR = 0xececec;
