@@ -4,23 +4,25 @@ import { diffuseGroup, normalGroup, lightGroup } from "@pixi/lights";
 
 export class SceneManager {
     //class is almost will be static
-    private constructor() {};
+    private constructor() { };
     private static _app: Application;
     private static _currentScene: IScene;
 
     public static get width() {
-        return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        // return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        return 800;
     }
 
     public static get height() {
-        return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        // return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        return 600;
     }
 
     public static init(background: number): void {
         SceneManager._app = new Application({
             view: document.getElementById("pixi-screen") as HTMLCanvasElement,
-            resizeTo: window,
-	        resolution: window.devicePixelRatio || 1,
+            // resizeTo: document.getElementById("pixi-screen") as HTMLCanvasElement,
+            resolution: window.devicePixelRatio || 1,
             autoDensity: true,
             backgroundColor: background,
         });
@@ -54,14 +56,14 @@ export class SceneManager {
 
     public static resize(): void {
         // if we have a scene, we let it know that a resize happened!
-        if (SceneManager._currentScene) {
-            SceneManager._currentScene.resize(SceneManager.width, SceneManager.height);
-        }
+        // if (SceneManager._currentScene) {
+        //     SceneManager._currentScene.resize(SceneManager.width, SceneManager.height);
+        // }
     }
 }
 
 export interface IScene extends DisplayObject {
     update(framesPassed: number): void;
     // we added the resize method to the interface
-    resize(screenWidth: number, screenHeight: number): void;
+    // resize(screenWidth: number, screenHeight: number): void;
 }

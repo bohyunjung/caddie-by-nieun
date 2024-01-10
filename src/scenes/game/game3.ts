@@ -21,11 +21,4 @@ export class Game3Scene extends Container implements IScene {
     update(_: number): void {
 
     }
-
-    resize(parentWidth: number, parentHeight: number): void {
-        this._fishList.forEach((fish, i) => {
-            fish.position.x = parentWidth / 2 + (i - 2) * 128;
-            fish.position.y = parentHeight / 2;
-        });
-    }
 }
