@@ -1,7 +1,7 @@
 import { Container, IDestroyOptions, Sprite, Text } from 'pixi.js';
 import { SceneManager, IScene } from '../../shared/scene-manager';
 
-const TARGET_COUNT: number = 10;
+const TARGET_COUNT: number = 99;
 
 export class Game3Scene extends Container implements IScene {
 
@@ -77,8 +77,10 @@ export class Game3Scene extends Container implements IScene {
     update(_: number): void {
         if (this._score == TARGET_COUNT) {
             this._scoreText.text = "다 먹었으면 가자";
+            this._scoreText.style.fontSize = 64;
         } else {
             this._scoreText.text = `${TARGET_COUNT - this._score}개의 멸치가 남았어`;
+            this._scoreText.style.fontSize = 24 + 12 * (this._score / TARGET_COUNT);
         }
     }
 
