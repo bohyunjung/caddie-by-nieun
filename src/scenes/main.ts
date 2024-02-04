@@ -30,14 +30,14 @@ export class MainScene extends Container implements IScene {
 
     update(_: number): void {
         this._timer += 1;
-        if (this._timer % 15 == 0) {
+        if (this._timer % 5 == 0) {
             this._direction *= -1;
         }
-        this.offset += this._direction * 15;
+        this.offset += this._direction * 4;
 
         this._titleText.filters = [new ZoomBlurFilter({
-            center: [250 + this.offset, 75 + this.offset * 2],
-            strength: 0.02
+            center: [250 + this.offset, 75 + this.offset],
+            strength: 0.08
         })];
     }
 
