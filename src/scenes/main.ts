@@ -1,6 +1,6 @@
 import { Container, Text } from 'pixi.js'
 import { IScene, SceneManager } from '../shared/scene-manager';
-import { makeNavBar } from '../ui/nav-bar';
+import { makeNavBar } from '../ui/nav';
 import { ZoomBlurFilter } from 'pixi-filters';
 
 export class MainScene extends Container implements IScene {

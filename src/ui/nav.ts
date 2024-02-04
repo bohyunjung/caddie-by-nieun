@@ -1,8 +1,22 @@
-import { Container } from "pixi.js";
-import { makeNavButton } from "./nav-button";
+import { Button } from "@pixi/ui";
+import { Container, Graphics, Text } from "pixi.js";
 import { MainScene } from "../scenes/main";
-import { SceneManager } from "../shared/scene-manager";
 import { Game3Scene } from "../scenes/game/game3";
+import { SceneManager } from "../shared/scene-manager";
+
+export const makeNavButton = (labelString: string, x: number, y: number) => {
+    const buttonView = new Graphics().beginFill(0xFFFFFF).drawRoundedRect(0, 0, 60, 45, 5);
+
+    const text = new Text(labelString, { fontSize: 20 });
+    text.anchor.set(0.5, 0.5);
+    text.position.x = buttonView.width / 2 - buttonView.x;
+    text.position.y = buttonView.height / 2 + buttonView.y;
+    buttonView.addChild(text);
+    
+    buttonView.x = x;
+    buttonView.y = y;
+    return new Button(buttonView);
+}
 
 export const makeNavBar = () => {
     const navBar = new Container();
