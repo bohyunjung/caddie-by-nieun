@@ -20,6 +20,7 @@
     "@pixi/lights": "^4.0.0",
     "@pixi/sound": "^5.1.0",
     "@pixi/ui": "^0.10.5",
+    "pixi-filters": "^5.2.1",
     "pixi.js": "^7.3.3",
     "tweedle.js": "^2.0.1"
   }
