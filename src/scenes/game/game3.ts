@@ -90,7 +90,7 @@ export class Game3Scene extends Container implements IScene {
 
         this._readyPane = makeReadyPane(
             "그늘집의 멸치",
-            "경기 중간에 잠깐 쉬어가는 그늘집은 진행 관리에 큰 변수다.\n그늘집에서 손님들이 왕창 술을 마시면서 뭉개고 있으면 나는 아주 속이 터진다.\n골프를 치러 온건지, 술 먹고 내기하러 온건지..\n\n얼른 먹고 가면 안되겠니?",
+            "지금 앞팀은 이미 세컨 지나갔다니까\n언제까지 그늘집에 앉아있을거야??\n\n빨리빨리 좀 먹고 이동하자고!",
             () => {
                 this._gameState = GameState.ACTIVE
             }

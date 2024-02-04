@@ -3,6 +3,7 @@ import { Container, Graphics, Text } from "pixi.js";
 import { MainScene } from "../scenes/main";
 import { Game3Scene } from "../scenes/game/game3";
 import { SceneManager } from "../shared/scene-manager";
+import { Game2Scene } from "../scenes/game/game2";
 
 export const makeNavButton = (labelString: string, x: number, y: number) => {
     const buttonView = new Graphics().beginFill(0xFFFFFF).drawRoundedRect(0, 0, 60, 45, 5);
@@ -12,7 +13,7 @@ export const makeNavButton = (labelString: string, x: number, y: number) => {
     text.position.x = buttonView.width / 2 - buttonView.x;
     text.position.y = buttonView.height / 2 + buttonView.y;
     buttonView.addChild(text);
-    
+
     buttonView.x = x;
     buttonView.y = y;
     return new Button(buttonView);
@@ -25,7 +26,7 @@ export const makeNavBar = () => {
     const navMap = [
         { text: "🏠", scene: MainScene },
         { text: "🚧", scene: MainScene },
-        { text: "🚧", scene: MainScene },
+        { text: "🪴", scene: Game2Scene },
         { text: "🐟", scene: Game3Scene },
     ]
     navMap.forEach((e, i) => {
