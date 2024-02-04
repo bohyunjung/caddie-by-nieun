@@ -1,8 +1,8 @@
 import { Container, Assets } from 'pixi.js'
 import { LoadingBarContainer } from '../containers/loading-bar-container';
 import { SceneManager, IScene } from '../shared/scene-manager';
-import { Game3Scene } from './game/game3';
 import { manifest } from '../shared/manifest';
+import { MainScene } from './main';
 
 export class LoaderScene extends Container implements IScene {
     private _loadingBar: LoadingBarContainer;
@@ -30,7 +30,7 @@ export class LoaderScene extends Container implements IScene {
     }
 
     private loaded(): void {
-        SceneManager.changeScene(new Game3Scene(SceneManager.width, SceneManager.height))
+        SceneManager.changeScene(new MainScene());
     }
 
     update(_: number): void {

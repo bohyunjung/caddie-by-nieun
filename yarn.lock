@@ -334,6 +334,14 @@
     "@pixi/settings" "7.3.3"
     "@pixi/utils" "7.3.3"
 
+"@pixi/ui@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@pixi/ui/-/ui-0.10.5.tgz#f1793f876662c05e493d3211ad247d2bce4fccf0"
+  integrity sha512-jI+X+gaK9MuNTg/XJAAptwAZrC4wLwAD0QDgb1zoe1pln5yqZIg0JvS3NW5kNSLkJ6kpx9TjquuV0+SlEBDRIw==
+  dependencies:
+    tweedle.js "^2.1.0"
+    typed-signals "^2.5.0"
+
 "@pixi/utils@7.3.3":
   version "7.3.3"
   resolved "https://registry.yarnpkg.com/@pixi/utils/-/utils-7.3.3.tgz#cad46d0ada1f51e30aedf781af63ad8a4a36d58a"
@@ -845,10 +853,15 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-tweedle.js@^2.0.1:
+tweedle.js@^2.0.1, tweedle.js@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tweedle.js/-/tweedle.js-2.1.0.tgz#523f5d50e5223c3c809b1aa627c6e9648e576d93"
   integrity sha512-0ReQgVjepoZkE6t0upWNgCRbplHkQJQYk1LStXugwSR728GLFmGDRuaQJlxeC/iBlxud6+P1RdODjaO25vHAqw==
+
+typed-signals@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/typed-signals/-/typed-signals-2.5.0.tgz#7be73505c2ee0dc4e43f1c4ee002c855796bd89a"
+  integrity sha512-m9lHc3eBCJerXYdx+G0uWZihyUXdqTzzgOdqiDDsoUo75WjhFJH6vP5/6w/xhyu04zoxHUqgYhf9FEt85dk/Ng==
 
 typescript@^4.9.3:
   version "4.9.5"

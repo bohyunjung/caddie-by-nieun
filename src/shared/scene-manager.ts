@@ -35,9 +35,6 @@ export class SceneManager {
         );
         SceneManager._app.ticker.add(SceneManager.update);
         window.addEventListener("resize", SceneManager.resize);
-
-        SceneManager._app.stage.eventMode = 'static';
-        SceneManager._app.stage.hitArea = SceneManager._app.screen;
     }
 
     public static changeScene(newScene: IScene): void {
@@ -62,14 +59,6 @@ export class SceneManager {
         // if (SceneManager._currentScene) {
         //     SceneManager._currentScene.resize(SceneManager.width, SceneManager.height);
         // }
-    }
-
-    public static on(...args: Parameters<typeof SceneManager._app.stage.on>) {
-        return SceneManager._app.stage.on(...args);
-    }
-
-    public static off(...args: Parameters<typeof SceneManager._app.stage.off>) {
-        return SceneManager._app.stage.off(...args);
     }
 }
 
