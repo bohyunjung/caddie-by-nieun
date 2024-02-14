@@ -959,6 +959,11 @@ pixi-filters@^5.2.1:
     "@pixi/filter-twist" "5.1.1"
     "@pixi/filter-zoom-blur" "5.1.1"
 
+pixi-projection@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pixi-projection/-/pixi-projection-1.0.0.tgz#4120f63157996a74bb3272ddfdbf461ef63b881d"
+  integrity sha512-+fV7SA69OLxNR3nXOoR6Z5vFTqcp3oH/+sHXsQ+Jw6J9nOK+APzlrnCcO3ftB9Y/GIVgR3+HIDpKpRWe6EPPSw==
+
 pixi.js@^7.3.3:
   version "7.3.3"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-7.3.3.tgz#dd791242460c1a7651de80ae8f91bfe9c91f2712"
