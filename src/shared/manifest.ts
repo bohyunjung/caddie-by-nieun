@@ -16,7 +16,10 @@ export const manifest: AssetsManifest = {
                 "3/fish/2": "image/game/3/fish/2.png",
                 "3/fish/3": "image/game/3/fish/3.png",
                 "3/fish/4": "image/game/3/fish/4.png",
-                "3/mouth": "image/game/3/mouth.png"
+                "3/mouth": "image/game/3/mouth.png",
+
+                "4/cart": "image/game/4/cart.png",
+                "4/road": "image/game/4/road.png",
             }
         }
     ]

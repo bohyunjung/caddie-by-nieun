@@ -18,7 +18,6 @@ export class Game2Scene extends Container implements IScene {
 
     private _divotList: Sprite[];
     private _score: number = 0;
-    private _scoreText: Text;
 
     initShovel() {
         this._shovel = Sprite.from("2/shovel/1");
@@ -62,19 +61,6 @@ export class Game2Scene extends Container implements IScene {
 
             this.addChild(divot);
         });
-    }
-
-    initScoreText() {
-        this._scoreText = new Text(this._score, {
-            fontFamily: 'Arial',
-            fontSize: 24,
-            fill: 0xff1010,
-            align: 'center',
-        });
-        this._scoreText.anchor.set(0.5, 0.5);
-        this._scoreText.position.x = this._width / 2;
-        this._scoreText.position.y = this._height / 2;
-        this.addChild(this._scoreText);
     }
 
     constructor() {
