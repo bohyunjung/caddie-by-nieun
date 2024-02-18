@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caddie by Nieun</title>
-  </head>
-  <body>
-    <div id="app">
-      <canvas id="pixi-screen"></canvas>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+  <title>보기 Bogey</title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <section>
+          HELLO
+        </section>
+        <section data-background-iframe="/game/#2" data-background-interactive>
+        </section>
+        <section>
+          HELLO
+        </section>
+      </section>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  </div>
+
+  <script type="module">
+    import Reveal from 'reveal.js';
+    Reveal.initialize({
+      controls: false,
+      progress: false,
+      overview: false,
+      touch: false,
+      navigationMode: 'linear',
+
+
+
+    });
+  </script>
+  <!-- <a href="/game/">GAME</a> -->
+
+</body>
+
 </html>
