@@ -3,9 +3,8 @@ import { SceneManager, IScene } from '../../shared/scene-manager';
 import { makeNavBar } from '../../ui/nav';
 import { GameState } from '../../shared/enums';
 import { makeDonePane, makeReadyPane } from '../../ui/pane';
-import { MainScene } from '../main';
 
-const TARGET_COUNT: number = 50;
+const TARGET_COUNT: number = 5;
 const UI_MARGIN: number = 60;
 
 export class Game2Scene extends Container implements IScene {
@@ -81,10 +80,10 @@ export class Game2Scene extends Container implements IScene {
         this.initShovel();
 
 
-        this.addChild(makeNavBar());
+        // this.addChild(makeNavBar());
 
         this._readyPane = makeReadyPane(
-            "배토배토",
+            "배테랑 캐디가 만든 이상한 게임 1",
             "그동안 골프장 코스 관리를 위해 나 너무 고생한 것 같다..\n그놈의 배토배토 누가 나 대신 배토 좀 해줘!\n\n나도 퇴근 좀 하게!!",
             () => {
                 this._gameState = GameState.ACTIVE
@@ -93,9 +92,9 @@ export class Game2Scene extends Container implements IScene {
         this.addChild(this._readyPane);
 
         this._donePane = makeDonePane(
-            "다 메웠으면 가자",
+            "게임을 종료합니다",
             () => {
-                SceneManager.changeScene(new MainScene());
+                window.parent.next();
             }
         )
         this.addChild(this._donePane);

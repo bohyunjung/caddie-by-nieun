@@ -5,13 +5,13 @@ import { Button } from "@pixi/ui";
 export const makeReadyPane = (titleString: string, descString: string, onStart: () => void) => {
     const readyPane = new Container();
 
-    const background = new Graphics().beginFill(0x009170).drawRect(0, 0, SceneManager.width, SceneManager.height);
+    const background = new Graphics().beginFill("chartreuse").drawRect(0, 0, SceneManager.width, SceneManager.height);
     readyPane.addChild(background);
 
     const title = new Text(titleString, {
         fontFamily: 'Arial',
-        fontSize: 64,
-        fill: 0xffffff,
+        fontSize: 48,
+        fill: 0x333,
         align: 'center',
     });
     title.anchor.set(0.5, 0.5);
@@ -22,7 +22,7 @@ export const makeReadyPane = (titleString: string, descString: string, onStart: 
     const desc = new Text(descString, {
         fontFamily: 'Arial',
         fontSize: 24,
-        fill: 0xffffff,
+        fill: 0x333,
         align: 'center',
     });
     desc.anchor.set(0.5, 0);
@@ -48,13 +48,13 @@ export const makeReadyPane = (titleString: string, descString: string, onStart: 
 export const makeDonePane = (titleString: string, onEnd?: () => void) => {
     const donePane = new Container();
 
-    const background = new Graphics().beginFill(0x009170).drawRect(0, 0, SceneManager.width, SceneManager.height);
+    const background = new Graphics().beginFill("chartreuse").drawRect(0, 0, SceneManager.width, SceneManager.height);
     donePane.addChild(background);
 
     const title = new Text(titleString, {
         fontFamily: 'Arial',
         fontSize: 64,
-        fill: 0xffffff,
+        fill: 0x333,
         align: 'center',
     });
 
