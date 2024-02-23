@@ -4,41 +4,379 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/white.css">
   <title>보기 Bogey</title>
 </head>
 
 <body>
   <div class="reveal">
+
+    <div id="next" hidden>
+      <img src="./image/index/tee.png" style="transform:rotate(270deg); width:20px" />
+    </div>
+
     <div class="slides">
+
+      <!-- intro -->
       <section>
-        <section>
-          HELLO
+        <section data-auto-animate data-autoslide="3000">
+          <h1 class="r-fit-text">보기 (Bogey)</h1>
         </section>
-        <section data-background-iframe="/game/#2" data-background-interactive>
-        </section>
-        <section>
-          HELLO
+        <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
+          data-background-size="50%" data-background-opacity="0.3">
+          <h1 class="r-fit-text">보기 (Bogey)</h1>
+          <div>
+            나 신입캐디...<br />
+            캐비넷 배정받았는데 이상한 일기장이 놓여있다...<br />
+            살짝 읽어봐도 아무도 모르겠지?<br />
+          </div>
+          <br />
+          <em style="background-color: #ddd; padding: 10px;">
+            오른쪽 티를 눌러 몰래 보기
+          </em>
         </section>
       </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+        <h3>첫번째 일기</h3>
+        <h5>슈퍼루키캐디 등 장 ψ(｀∇´)ψ</h5>
+        <div>
+          오늘 굿샷골프장에 입사했다! 앞으로 두 달 동안 캐디 선배님께 교육을 받고 근무에 투입될 거라고 한다. 지금은 골프에 관해 아무것도 모르지만 기왕 시작한 거 열심히 해서 돈 많이 벌어야지.
+        </div>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+        <h3>두번째 일기</h3>
+        <h5>신입 캐디 교육 끝</h5>
+        <div>
+          두 달간의 교육이 끝났다. 휴. 겨울에 골프장이 이렇게 추운 줄 몰랐다; 교육 기간에는 따로 수입이 없어서 선배님이 밥과 술을 계속 사주셨다.ㅠㅠ
+          매일 연습 하면서 죽자 사자 업무를 익혔는데 실전에서 무사히 잘할 수 있을까? 내일부터는 선배님을 따라
+
+          <div class="term">
+            동반 근무
+            <span class="term-detail">
+              <span class="term-detail-title">동반 근무</span>
+              <br />
+              선배 캐디가 근무할 때 따라 나가서 캐디 업무를 배우는 것으로 캐디 교육의 마지막 과정이다.
+            </span>
+          </div>
+
+          에 투입되는데 으 긴장된다!
+        </div>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" data-transition="slide-in" class="diary">
+        <section data-auto-animate>
+          <h3>세번째 일기</h3>
+          <h5>골프를 치러 온 건지 꿀빠러 온 건지?</h5>
+          <div>
+            교육생 동반 근무에 나가고 있다. 듣던 대로 이론과 실전은 천지 차이였다.
+            선배님 없이 이 모든 걸 혼자서 해야 한다면 정말 멘붕일 듯.
+            그래도 이제 빨리
+
+            <div class="term">
+              티켓
+              <span class="term-detail">
+                <span class="term-detail-title">티켓</span>
+                <br />
+                담당 캐디명, 고객명, 경기 시작 시간 등이 인쇄된 종이로 ‘배치표’라고도 한다. 즉, ‘티켓 받는다’는 표현은 라운드에 투입된다는 것을 의미한다.
+              </span>
+            </div>
+
+            받아서 나도 돈 벌어야지!!
+            그동안 챙겨주신 선배님 맛있는 것도 사드리고 싶다.
+          </div>
+        </section>
+        <section data-auto-animate class="hideNext">
+          <h3>세번째 일기</h3>
+          <h5>골프를 치러 온 건지 꿀빠러 온 건지?</h5>
+          <div>
+            그런데 재밌는 게, 사람들은 왜 스포츠를 하면서 꼼수를 부리지??
+            한번은 공이 카트 도로에 떨어져 도로를 타고 굴러갔는데, 사람들이
+
+            <div class="term">
+              도로공사 협찬
+              <span class="term-detail">
+                <span class="term-detail-title">도로공사 협찬</span>
+                <br />
+                공이 카트 도로에 맞고 그린 방향으로 굴러가는 상황. 마치 도로공사에서 길을 만들어 주는 것처럼 공이 원하는 방향으로 가는 행운을 은유적으로 표현한 말이다.
+              </span>
+            </div>
+
+            이라며 좋아했다. 선배님도 웃고 계시길래 그게 무슨 말인지 여쭤보니 공이 도로로 굴러간 덕분에 실제로 친 것보다
+            훨씬 더 멀리 간 거라고 한다. 그러면 골퍼는
+
+            <div class="term">
+              타수
+              <span class="term-detail">
+                <span class="term-detail-title">타수</span>
+                <br />
+                골프는 규정 타수인 72타를 기준으로 타수를 줄일수록 이기는 게임이다.
+              </span>
+            </div>
+
+            를 줄일 수 있어서 좋고 캐디는 진행이 빨라져서 좋다고.. 사람들이 그런 요행을 바라고 신나 하는게 <span class="game-trigger">웃기다ㅋ</span>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-transition="zoom" data-background-iframe="/game/#1" data-background-interactive>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+        <section data-auto-animate class="showNext">
+          <h3>네번째 일기</h3>
+          <h5>하루에 두 탕은 힘드렁</h5>
+          <div>
+            처음에는
+
+            <div class="term">
+              투
+              <span class="term-detail">
+                <span class="term-detail-title">투</span>
+                <br />
+                하루에 2라운드 근무하는 것. 1라운드는 정규홀을 기준으로 약 4시간 30분이 소요된다.
+              </span>
+            </div>
+
+            해서 돈 많이 벌 생각만 했었는데, 막상 해보니 손님 상대하는 것이 너무 힘들다. 대부분 나보다 나이가 훨씬 많은 데다 팀마다 스타일도 다 다르니.. 근무 나갈 때마다 손님이
+            낯설고, 무섭기도 하고 그렇다. 이제껏 주변에서 보던 부류의 사람들이 아니라서 더 그런 것 같다. 선배 언니들은 요령 있게 잘하던데... 게다가 나는 아직 업무가 능숙하지 않아서 툭하면
+            컴플레인을 받는다.ㅠ 여러모로 빡센 일이라는 걸 체감하고 있다.
+          </div>
+        </section>
+        <section data-auto-animate>
+          <h3>네번째 일기</h3>
+          <h5>하루에 두 탕은 힘드렁</h5>
+          <div>
+            그래도 투 많이 하면 다른 알바에 비해 수입은 괜찮다. 매일 푸른 산과 하늘을 볼 수 있는 것도 좋고, 다른 캐디 언니들이랑도 친해지고 있으니까 뭐… 언니들 말로는 처음 1년이 제일 어렵고 3년
+            지나면 할 만해 진다고 하더라.
+          </div>
+        </section>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+        <section>
+          <h3>다섯번째 일기</h3>
+          <h5>건실한 캐디로 인정받은 날</h5>
+          <div>
+            처음 필드장에서 일하는 사람 치고는 오래 일한다며 선배님께 칭찬을 들었다. 사실 캐디라는 직업은 사람들이 많이 알지만 정작 무슨 일은 하는지는 잘 모른다. 서비스업이다보니 누군가는 되게 고생
+            많이 한다고 생각하고, 누군가는 하는일 없이 꿀빤다고 생각하기도 한다.
+          </div>
+        </section>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary hideNext">
+        <h3>여섯번째 일기</h3>
+        <h5>그만 좀 땅 파먹어..(；′⌒`)</h5>
+        <div>
+          날도 점점 더워지는데
+
+          <div class="term">
+            배토
+            <span class="term-detail">
+              <span class="term-detail-title">배토</span>
+              <br />
+              디봇(Divot)을 모래로 메워주는 것. 디봇(Divot)은 골프 클럽에 맞아 잔디가 뜯겨 나가며 땅이 패인 곳을 말한다.
+            </span>
+          </div>
+
+          업무가 상상 이상으로 많다.
+          캐디는 선수를 보조하고 경기를 진행하는 사람인 줄 알았는데, 골프장 코스 관리까지 캐디의 업무라니!?
+          오늘도 5시간 경기를 마치고 다시 배토 가방과 삽을 챙겨서 코스로 <span class="game-trigger">나가야 한다.</span>
+        </div>
+      </section>
+
+      <section data-background-transition="zoom" data-background-iframe="/game/#2" data-background-interactive>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+        <section data-auto-animate class="showNext">
+          <h3>일곱번째 일기</h3>
+          <h5>음주 후에는 부디 골프 대신 귀가를</h5>
+          <div>
+            밤새 술을 먹고 온 팀을 새벽 첫 팀으로 받았다.
+            새벽 세 시부터 일어나서 준비하고 출근했는데, 첫팀으로 만난게 만취팀이라니.
+            다들 술을 얼마나 마셨는지 인사할 때부터 술냄새가 한가득 났다.
+            술을 저렇게 먹고 골프를 치면 기억이나 날까?
+          </div>
+        </section>
+        <section data-auto-animate>
+          <h3>일곱번째 일기</h3>
+          <h5>음주 후에는 부디 골프 대신 귀가를</h5>
+          <div>
+            오늘 나간 팀은 시작부터 카트에 막걸리 다섯 병을 싣더니
+
+            <div class="term">
+              18홀
+              <span class="term-detail">
+                <span class="term-detail-title">18홀</span>
+                <br />
+                정규 골프 코스는 총 18개의 홀로 구성되어 있다.
+              </span>
+            </div>
+
+            내내 음주 골프를 쳤다.
+            자기들끼리만 신나서 누가 칠 차례인지도 잊어버리고,
+
+            <div class="term">
+              클럽
+              <span class="term-detail">
+                <span class="term-detail-title">클럽</span>
+                <br />
+                골프 클럽 또는 골프채. 골프 클럽은 우드, 아이언, 웨지, 퍼터 등으로 분류된다.
+              </span>
+            </div>
+
+            은
+
+            <div class="term">
+              러프
+              <span class="term-detail">
+                <span class="term-detail-title">러프</span>
+                <br />
+                페어웨이의 바깥 부분으로 잔디가 무성하거나 잡초 등이 있는 곳.
+              </span>
+            </div>
+            에 놓고 다니고, 계속
+
+            <div class="term">
+              멀리건
+              <span class="term-detail">
+                <span class="term-detail-title">멀리건</span>
+                <br />
+                티샷이 잘못되었을 때 벌타 없이 다시 칠 수 있는 기회.
+              </span>
+            </div>
+            치고.
+
+            그래서 조심스레 자제해달라고 요청했더니 난생처음 듣는 쌍욕을 먹었다.
+          </div>
+        </section>
+        <section data-auto-animate>
+          <h3>일곱번째 일기</h3>
+          <h5>음주 후에는 부디 골프 대신 귀가를</h5>
+          <div>
+            이런 경우는 처음이라 황당하고 불쾌한 마음에 나도 모르게 언성을 높이고 말았다.
+            그러자 나에게 쌍욕을 갈긴 손놈은 곧바로 골프장에 컴플레인을 걸었고, 나는
+
+            <div class="term">
+              벌당
+              <span class="term-detail">
+                <span class="term-detail-title">벌당</span>
+                <br />
+                캐디가 정해진 업무를 수행하지 못하거나 규칙을 위반했을 때 받는 일종의 징계. 벌당을 받은 캐디는 라운딩에 참여하지 못하고 다른 잡일을 해야 한다.
+              </span>
+            </div>
+
+            을 받았다.
+            물론 급여는 없다. 직원도 분명히 그 손님이 만취한 상태인 걸 알았을 텐데, 그저 내 잘못이라고만 한다.
+            이곳에서 나는 구성원으로서 보호받지 못했고, 앞으로도 이럴 거란 게 그려지니 마음 속이 너무 쓰다.
+          </div>
+        </section>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary hideNext">
+        <h3>여덟번째 일기</h3>
+        <h5>얼른 먹고 가자 쫌</h5>
+        <div>
+          날도 점점 골프장이 팀을 많이 받고 수익을 올리기 위해서는 빠른 경기 진행이 필수적이다.
+          그런데 캐디들 사이에서 진행 속도가 특히 느리기로 소문난 모 회원님이 오시거나, 땡땡회가 단체로 와서 전반 마치고
+
+          <div class="term">
+            그늘집
+            <span class="term-detail">
+              <span class="term-detail-title">배토</span>
+              <br />
+              코스 중간중간에 위치한 휴식 공간으로 음료나 간단한 식사를 할 수 있는 곳.
+            </span>
+          </div>
+
+          에 들르기라도 하면 그날은 망했다고 보면 된다. 그늘집은 진행 관리에 언제나 큰 변수다.
+          그늘집에서 손님들이 진탕 술 마시고 뭉개고 있으면 나는 아주 <span class="game-trigger">속이 터진다</span>. 골프를 치러 온 건지, 술 먹고 내기하러 온건지..
+
+        </div>
+      </section>
+
+      <section data-background-transition="zoom" data-background-iframe="/game/#3" data-background-interactive>
+      </section>
+
+      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary showNext">
+        <h3>아홉번째 일기</h3>
+        <div>
+          오늘 새해 첫 라운드를 하다가 내 삶이
+
+          <div class="term">
+            보기
+            <span class="term-detail">
+              <span class="term-detail-title">보기(Bogey)</span>
+              <br />
+              기준 타수인 ‘파(Par)’보다 1타수 많은 스코어.
+            </span>
+          </div>
+          같다는 생각이 들었다.
+
+        </div>
+      </section>
+
+      <!-- outro -->
+      <section>
+        <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
+          data-background-opacity="0.3" data-background-size="50%">
+          <div>
+            알고 봤더니 내 캐비넷이 아니라<br />
+            선배 캐디님의 캐비넷이었다...<br />
+            <br />
+            머쓱하게 옆자리에 있는 진짜 내 캐비넷에 짐을 풀고 있는데...<br />
+            선배 캐디님이 일기장과 나를 번갈아보며 눈을 반짝이신다...<br />
+            <br />
+            나...캐디생활 잘 할 수 있겠지?
+          </div>
+        </section>
+        <section data-auto-animate data-autoslide="3000" class="hideNext">
+          <h1 class="r-fit-text">보기 (Bogey)</h1>
+        </section>
+      </section>
+
     </div>
   </div>
 
   <script type="module">
     import Reveal from 'reveal.js';
     Reveal.initialize({
+      keyboard: false,
       controls: false,
       progress: false,
       overview: false,
       touch: false,
       navigationMode: 'linear',
+    });
 
+    window.next = () => {
+      Reveal.next();
+    };
 
+    Reveal.addEventListener('slidechanged', function (event) {
+
+      if (event.currentSlide.classList.contains("showNext")) {
+        document.querySelector("#next").hidden = false;
+      }
+
+      if (event.currentSlide.classList.contains("hideNext")) {
+        document.querySelector("#next").hidden = true;
+      }
 
     });
+
+    document.querySelector("#next").addEventListener("click", (e) => {
+      window.next();
+    });
+    document.querySelectorAll(".game-trigger").forEach(el => el.addEventListener("click", (e) => {
+      window.next();
+    }));
+
   </script>
-  <!-- <a href="/game/">GAME</a> -->
 
 </body>
 

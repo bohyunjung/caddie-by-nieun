@@ -5,7 +5,7 @@ import { GameState } from '../../shared/enums';
 import { makeDonePane, makeReadyPane } from '../../ui/pane';
 import { MainScene } from '../main';
 
-const TARGET_COUNT: number = 999;
+const TARGET_COUNT: number = 99;
 const UI_MARGIN: number = 60;
 
 export class Game3Scene extends Container implements IScene {
@@ -86,10 +86,10 @@ export class Game3Scene extends Container implements IScene {
         this.initScoreText();
         this.initFishList();
 
-        this.addChild(makeNavBar());
+        // this.addChild(makeNavBar());
 
         this._readyPane = makeReadyPane(
-            "그늘집의 멸치",
+            "배테랑 캐디가 만든 이상한 게임 3",
             "지금 앞팀은 이미 세컨 지나갔다니까\n언제까지 그늘집에 앉아있을거야??\n\n빨리빨리 좀 먹고 이동하자고!",
             () => {
                 this._gameState = GameState.ACTIVE
@@ -100,7 +100,7 @@ export class Game3Scene extends Container implements IScene {
         this._donePane = makeDonePane(
             "다 먹었으면 가자",
             () => {
-                SceneManager.changeScene(new MainScene());
+                window.parent.next();
             }
         )
         this.addChild(this._donePane);
@@ -113,7 +113,7 @@ export class Game3Scene extends Container implements IScene {
         if (this._score == TARGET_COUNT) {
             this._gameState = GameState.DONE;
         } else {
-            this._scoreText.text = `${TARGET_COUNT - this._score}개의 멸치가 남았어`;
+            this._scoreText.text = `${TARGET_COUNT - this._score}개만 더 먹고 일어나`;
             this._scoreText.style.fontSize = 24 + 12 * (this._score / TARGET_COUNT);
         }
     }

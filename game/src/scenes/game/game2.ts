@@ -83,7 +83,7 @@ export class Game2Scene extends Container implements IScene {
         // this.addChild(makeNavBar());
 
         this._readyPane = makeReadyPane(
-            "배테랑 캐디가 만든 이상한 게임 1",
+            "배테랑 캐디가 만든 이상한 게임 2",
             "그동안 골프장 코스 관리를 위해 나 너무 고생한 것 같다..\n그놈의 배토배토 누가 나 대신 배토 좀 해줘!\n\n나도 퇴근 좀 하게!!",
             () => {
                 this._gameState = GameState.ACTIVE

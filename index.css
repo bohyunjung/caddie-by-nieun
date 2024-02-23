@@ -1,0 +1,64 @@
+/* Tooltip container */
+.term {
+    background-color: chartreuse;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.term .term-detail {
+    text-align: left;
+    visibility: hidden;
+    width: 20vw;
+    background-color: #fcec8a;
+    color: #333;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 18px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.term .term-detail-title {
+    color: blue;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.term:hover .term-detail {
+    visibility: visible;
+}
+
+.game-trigger {
+    cursor: pointer;
+    animation: colors 0.5s infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-color: chartreuse;
+    }
+
+    50% {
+        background-color: cyan;
+    }
+
+    100% {
+        background-color: chartreuse;
+    }
+}
+
+.diary {
+    text-align: left;
+}
+
+#next {
+    position: absolute;
+    right: 90px;
+    bottom: -30px;
+    cursor: pointer;
+    z-index: 10;
+}
