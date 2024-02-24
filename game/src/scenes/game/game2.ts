@@ -4,7 +4,7 @@ import { makeNavBar } from '../../ui/nav';
 import { GameState } from '../../shared/enums';
 import { makeDonePane, makeReadyPane } from '../../ui/pane';
 
-const TARGET_COUNT: number = 5;
+const TARGET_COUNT: number = 10;
 const UI_MARGIN: number = 60;
 
 export class Game2Scene extends Container implements IScene {
@@ -92,7 +92,7 @@ export class Game2Scene extends Container implements IScene {
         this.addChild(this._readyPane);
 
         this._donePane = makeDonePane(
-            "게임을 종료합니다",
+            "게임을 종료하고\n일기로 돌아갑니다...",
             () => {
                 window.parent.next();
             }

@@ -5,7 +5,7 @@ import { GameState } from '../../shared/enums';
 import { makeDonePane, makeReadyPane } from '../../ui/pane';
 import { MainScene } from '../main';
 
-const TARGET_COUNT: number = 99;
+const TARGET_COUNT: number = 50;
 const UI_MARGIN: number = 60;
 
 export class Game3Scene extends Container implements IScene {
@@ -98,7 +98,7 @@ export class Game3Scene extends Container implements IScene {
         this.addChild(this._readyPane);
 
         this._donePane = makeDonePane(
-            "다 먹었으면 가자",
+            "게임을 종료하고\n일기로 돌아갑니다...",
             () => {
                 window.parent.next();
             }

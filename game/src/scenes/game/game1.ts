@@ -33,7 +33,7 @@ export class Game1Scene extends Container implements IScene {
         this.addChild(this._readyPane);
 
         this._donePane = makeDonePane(
-            "공사중...",
+            "게임을 종료하고\n일기로 돌아갑니다...",
             () => {
                 window.parent.next();
             }

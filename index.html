@@ -7,14 +7,24 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/white.css">
-  <title>보기 Bogey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>보기 (Bogey)</title>
 </head>
 
 <body>
   <div class="reveal">
 
+    <div id="ornament" hidden>
+      <img src="./image/index/ball.png" style="height:50px;" />
+      <img src="./image/index/liner.png" style="height:50px;" />
+      <img src="./image/index/marker.png" style="height:50px;" />
+    </div>
+
     <div id="next" hidden>
-      <img src="./image/index/tee.png" style="transform:rotate(270deg); width:20px" />
+      <img src="./image/index/tee.png" style="width:120px;" />
     </div>
 
     <div class="slides">
@@ -22,33 +32,33 @@
       <!-- intro -->
       <section>
         <section data-auto-animate data-autoslide="3000">
-          <h1 class="r-fit-text">보기 (Bogey)</h1>
+          <h1 class="main-title"><b>보 기</b>(Bogey)</h1>
         </section>
         <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
-          data-background-size="50%" data-background-opacity="0.3">
-          <h1 class="r-fit-text">보기 (Bogey)</h1>
-          <div>
+          data-background-size="30vh">
+          <h1 class="main-title"><b>보 기</b>(Bogey)</h1>
+          <div class="mind">
             나 신입캐디...<br />
-            캐비넷 배정받았는데 이상한 일기장이 놓여있다...<br />
+            캐비닛 배정받았는데 이상한 일기장이 놓여있다...<br />
             살짝 읽어봐도 아무도 모르겠지?<br />
           </div>
           <br />
-          <em style="background-color: #ddd; padding: 10px;">
+          <em style="background-color: chartreuse; width:980px; padding: 10px; font-size:20px">
             오른쪽 티를 눌러 몰래 보기
           </em>
         </section>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
-        <h3>첫번째 일기</h3>
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary">
+        <h3>첫 번째 일기</h3>
         <h5>슈퍼루키캐디 등 장 ψ(｀∇´)ψ</h5>
         <div>
           오늘 굿샷골프장에 입사했다! 앞으로 두 달 동안 캐디 선배님께 교육을 받고 근무에 투입될 거라고 한다. 지금은 골프에 관해 아무것도 모르지만 기왕 시작한 거 열심히 해서 돈 많이 벌어야지.
         </div>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
-        <h3>두번째 일기</h3>
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary">
+        <h3>두 번째 일기</h3>
         <h5>신입 캐디 교육 끝</h5>
         <div>
           두 달간의 교육이 끝났다. 휴. 겨울에 골프장이 이렇게 추운 줄 몰랐다; 교육 기간에는 따로 수입이 없어서 선배님이 밥과 술을 계속 사주셨다.ㅠㅠ
@@ -58,7 +68,7 @@
             동반 근무
             <span class="term-detail">
               <span class="term-detail-title">동반 근무</span>
-              <br />
+              <br /> <br />
               선배 캐디가 근무할 때 따라 나가서 캐디 업무를 배우는 것으로 캐디 교육의 마지막 과정이다.
             </span>
           </div>
@@ -67,9 +77,10 @@
         </div>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" data-transition="slide-in" class="diary">
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" data-transition="slide-in"
+        class="diary">
         <section data-auto-animate>
-          <h3>세번째 일기</h3>
+          <h3>세 번째 일기</h3>
           <h5>골프를 치러 온 건지 꿀빠러 온 건지?</h5>
           <div>
             교육생 동반 근무에 나가고 있다. 듣던 대로 이론과 실전은 천지 차이였다.
@@ -80,7 +91,7 @@
               티켓
               <span class="term-detail">
                 <span class="term-detail-title">티켓</span>
-                <br />
+                <br /> <br />
                 담당 캐디명, 고객명, 경기 시작 시간 등이 인쇄된 종이로 ‘배치표’라고도 한다. 즉, ‘티켓 받는다’는 표현은 라운드에 투입된다는 것을 의미한다.
               </span>
             </div>
@@ -90,7 +101,7 @@
           </div>
         </section>
         <section data-auto-animate class="hideNext">
-          <h3>세번째 일기</h3>
+          <h3>세 번째 일기</h3>
           <h5>골프를 치러 온 건지 꿀빠러 온 건지?</h5>
           <div>
             그런데 재밌는 게, 사람들은 왜 스포츠를 하면서 꼼수를 부리지??
@@ -100,7 +111,7 @@
               도로공사 협찬
               <span class="term-detail">
                 <span class="term-detail-title">도로공사 협찬</span>
-                <br />
+                <br /> <br />
                 공이 카트 도로에 맞고 그린 방향으로 굴러가는 상황. 마치 도로공사에서 길을 만들어 주는 것처럼 공이 원하는 방향으로 가는 행운을 은유적으로 표현한 말이다.
               </span>
             </div>
@@ -112,7 +123,7 @@
               타수
               <span class="term-detail">
                 <span class="term-detail-title">타수</span>
-                <br />
+                <br /> <br />
                 골프는 규정 타수인 72타를 기준으로 타수를 줄일수록 이기는 게임이다.
               </span>
             </div>
@@ -125,9 +136,9 @@
       <section data-background-transition="zoom" data-background-iframe="/game/#1" data-background-interactive>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary">
         <section data-auto-animate class="showNext">
-          <h3>네번째 일기</h3>
+          <h3>네 번째 일기</h3>
           <h5>하루에 두 탕은 힘드렁</h5>
           <div>
             처음에는
@@ -136,7 +147,7 @@
               투
               <span class="term-detail">
                 <span class="term-detail-title">투</span>
-                <br />
+                <br /> <br />
                 하루에 2라운드 근무하는 것. 1라운드는 정규홀을 기준으로 약 4시간 30분이 소요된다.
               </span>
             </div>
@@ -147,7 +158,7 @@
           </div>
         </section>
         <section data-auto-animate>
-          <h3>네번째 일기</h3>
+          <h3>네 번째 일기</h3>
           <h5>하루에 두 탕은 힘드렁</h5>
           <div>
             그래도 투 많이 하면 다른 알바에 비해 수입은 괜찮다. 매일 푸른 산과 하늘을 볼 수 있는 것도 좋고, 다른 캐디 언니들이랑도 친해지고 있으니까 뭐… 언니들 말로는 처음 1년이 제일 어렵고 3년
@@ -156,9 +167,9 @@
         </section>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary">
         <section>
-          <h3>다섯번째 일기</h3>
+          <h3>다섯 번째 일기</h3>
           <h5>건실한 캐디로 인정받은 날</h5>
           <div>
             처음 필드장에서 일하는 사람 치고는 오래 일한다며 선배님께 칭찬을 들었다. 사실 캐디라는 직업은 사람들이 많이 알지만 정작 무슨 일은 하는지는 잘 모른다. 서비스업이다보니 누군가는 되게 고생
@@ -167,8 +178,8 @@
         </section>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary hideNext">
-        <h3>여섯번째 일기</h3>
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary hideNext">
+        <h3>여섯 번째 일기</h3>
         <h5>그만 좀 땅 파먹어..(；′⌒`)</h5>
         <div>
           날도 점점 더워지는데
@@ -177,7 +188,7 @@
             배토
             <span class="term-detail">
               <span class="term-detail-title">배토</span>
-              <br />
+              <br /> <br />
               디봇(Divot)을 모래로 메워주는 것. 디봇(Divot)은 골프 클럽에 맞아 잔디가 뜯겨 나가며 땅이 패인 곳을 말한다.
             </span>
           </div>
@@ -191,9 +202,9 @@
       <section data-background-transition="zoom" data-background-iframe="/game/#2" data-background-interactive>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary">
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary">
         <section data-auto-animate class="showNext">
-          <h3>일곱번째 일기</h3>
+          <h3>일곱 번째 일기</h3>
           <h5>음주 후에는 부디 골프 대신 귀가를</h5>
           <div>
             밤새 술을 먹고 온 팀을 새벽 첫 팀으로 받았다.
@@ -203,7 +214,7 @@
           </div>
         </section>
         <section data-auto-animate>
-          <h3>일곱번째 일기</h3>
+          <h3>일곱 번째 일기</h3>
           <h5>음주 후에는 부디 골프 대신 귀가를</h5>
           <div>
             오늘 나간 팀은 시작부터 카트에 막걸리 다섯 병을 싣더니
@@ -212,7 +223,7 @@
               18홀
               <span class="term-detail">
                 <span class="term-detail-title">18홀</span>
-                <br />
+                <br /> <br />
                 정규 골프 코스는 총 18개의 홀로 구성되어 있다.
               </span>
             </div>
@@ -224,7 +235,7 @@
               클럽
               <span class="term-detail">
                 <span class="term-detail-title">클럽</span>
-                <br />
+                <br /> <br />
                 골프 클럽 또는 골프채. 골프 클럽은 우드, 아이언, 웨지, 퍼터 등으로 분류된다.
               </span>
             </div>
@@ -235,7 +246,7 @@
               러프
               <span class="term-detail">
                 <span class="term-detail-title">러프</span>
-                <br />
+                <br /> <br />
                 페어웨이의 바깥 부분으로 잔디가 무성하거나 잡초 등이 있는 곳.
               </span>
             </div>
@@ -245,7 +256,7 @@
               멀리건
               <span class="term-detail">
                 <span class="term-detail-title">멀리건</span>
-                <br />
+                <br /> <br />
                 티샷이 잘못되었을 때 벌타 없이 다시 칠 수 있는 기회.
               </span>
             </div>
@@ -255,7 +266,7 @@
           </div>
         </section>
         <section data-auto-animate>
-          <h3>일곱번째 일기</h3>
+          <h3>일곱 번째 일기</h3>
           <h5>음주 후에는 부디 골프 대신 귀가를</h5>
           <div>
             이런 경우는 처음이라 황당하고 불쾌한 마음에 나도 모르게 언성을 높이고 말았다.
@@ -265,7 +276,7 @@
               벌당
               <span class="term-detail">
                 <span class="term-detail-title">벌당</span>
-                <br />
+                <br /> <br />
                 캐디가 정해진 업무를 수행하지 못하거나 규칙을 위반했을 때 받는 일종의 징계. 벌당을 받은 캐디는 라운딩에 참여하지 못하고 다른 잡일을 해야 한다.
               </span>
             </div>
@@ -277,8 +288,8 @@
         </section>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary hideNext">
-        <h3>여덟번째 일기</h3>
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary hideNext">
+        <h3>여덟 번째 일기</h3>
         <h5>얼른 먹고 가자 쫌</h5>
         <div>
           날도 점점 골프장이 팀을 많이 받고 수익을 올리기 위해서는 빠른 경기 진행이 필수적이다.
@@ -288,7 +299,7 @@
             그늘집
             <span class="term-detail">
               <span class="term-detail-title">배토</span>
-              <br />
+              <br /> <br />
               코스 중간중간에 위치한 휴식 공간으로 음료나 간단한 식사를 할 수 있는 곳.
             </span>
           </div>
@@ -302,8 +313,8 @@
       <section data-background-transition="zoom" data-background-iframe="/game/#3" data-background-interactive>
       </section>
 
-      <section data-background-gradient="radial-gradient(#ffffff, #efefef)" class="diary showNext">
-        <h3>아홉번째 일기</h3>
+      <section data-background-gradient="radial-gradient(#ffffff 80%, #d9d9d9)" class="diary showNext">
+        <h3>아홉 번째 일기</h3>
         <div>
           오늘 새해 첫 라운드를 하다가 내 삶이
 
@@ -311,7 +322,7 @@
             보기
             <span class="term-detail">
               <span class="term-detail-title">보기(Bogey)</span>
-              <br />
+              <br /> <br />
               기준 타수인 ‘파(Par)’보다 1타수 많은 스코어.
             </span>
           </div>
@@ -320,22 +331,43 @@
         </div>
       </section>
 
+
       <!-- outro -->
       <section>
+
         <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
-          data-background-opacity="0.3" data-background-size="50%">
-          <div>
-            알고 봤더니 내 캐비넷이 아니라<br />
-            선배 캐디님의 캐비넷이었다...<br />
-            <br />
-            머쓱하게 옆자리에 있는 진짜 내 캐비넷에 짐을 풀고 있는데...<br />
-            선배 캐디님이 일기장과 나를 번갈아보며 눈을 반짝이신다...<br />
-            <br />
-            나...캐디생활 잘 할 수 있겠지?
+          data-background-size="30vh">
+          <div class="mind">
+            일기를 다 읽었다.<br />
           </div>
         </section>
+
+
+        <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
+          data-background-size="30vh">
+          <div class="mind">
+            알고 봤더니 내 캐비닛이 아니라<br />
+            선배 캐디님의 캐비닛이더라.<br />
+          </div>
+        </section>
+
+        <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
+          data-background-size="30vh">
+          <div class="mind">
+            머쓱하게 옆자리에 있는 진짜 내 캐비닛에 짐을 풀고 있는데<br />
+            선배 캐디님이 일기장과 나를 번갈아보며 눈을 반짝이신다.<br />
+          </div>
+        </section>
+
+        <section data-auto-animate class="showNext" data-background-image="./image/index/cabinet.png"
+          data-background-size="30vh">
+          <div class="mind">
+            나... 캐디생활 잘 할 수 있겠지?
+          </div>
+        </section>
+
         <section data-auto-animate data-autoslide="3000" class="hideNext">
-          <h1 class="r-fit-text">보기 (Bogey)</h1>
+          <h1 class="main-title"><b>보 기</b>(Bogey)</h1>
         </section>
       </section>
 
@@ -351,6 +383,7 @@
       overview: false,
       touch: false,
       navigationMode: 'linear',
+      preloadIframes: true
     });
 
     window.next = () => {
@@ -361,10 +394,12 @@
 
       if (event.currentSlide.classList.contains("showNext")) {
         document.querySelector("#next").hidden = false;
+        document.querySelector("#ornament").hidden = false;
       }
 
       if (event.currentSlide.classList.contains("hideNext")) {
         document.querySelector("#next").hidden = true;
+        document.querySelector("#ornament").hidden = true;
       }
 
     });

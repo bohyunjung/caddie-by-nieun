@@ -1,3 +1,9 @@
+html * {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 /* Tooltip container */
 .term {
     background-color: chartreuse;
@@ -24,7 +30,8 @@
 }
 
 .term .term-detail-title {
-    color: blue;
+    color: #0000ff;
+    text-decoration: underline;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -57,8 +64,23 @@
 
 #next {
     position: absolute;
-    right: 90px;
-    bottom: -30px;
+    right: 40px;
+    bottom: 20px;
     cursor: pointer;
     z-index: 10;
+}
+
+#ornament {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.mind {
+    font-size: 26px;
+}
+
+.main-title {
+    font-size: 100px;
 }
